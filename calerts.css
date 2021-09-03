@@ -1,0 +1,44 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: sans-serif;   
+ box-sizing: border-box;
+}
+
+.calertBox{
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    position: fixed;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.calert{
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    animation: alert 0.1s linear;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.192);
+}
+
+.calert span{
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+@keyframes alert{
+    0%{
+        margin-bottom: -10px;
+    }
+    85%{
+        margin-bottom: 15px;
+    }
+    100%{
+        margin-bottom: 10px;
+    }
+}
